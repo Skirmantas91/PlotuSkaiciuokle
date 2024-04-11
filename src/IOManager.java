@@ -19,7 +19,7 @@ public class IOManager {
 
     public void suzinokFigura() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Pasirinkite figūrą: (1 - Kvadratas, 2 - Trikampis)");
+        System.out.println("Pasirinkite figūrą: (1 - Kvadratas, 2 - Trikampis, 3 - Skritulys)");
         pasirinktaFigura = scanner.nextInt();
     }
 
@@ -28,13 +28,17 @@ public class IOManager {
         if (pasirinktaFigura == 1) {
             System.out.println("Įveskite kvadrato kraštinės ilgį:");
             krastine1 = scanner.nextDouble();
-        } else if (pasirinktaFigura == 2) {
+        }
+        else if (pasirinktaFigura == 2) {
             System.out.println("Įveskite trikampio pirmos statinės ilgį:");
             krastine1 = scanner.nextDouble();
             System.out.println("Įveskite trikampio antros statinės ilgį:");
             krastine2 = scanner.nextDouble();
+        } else if (pasirinktaFigura == 3) {
+            System.out.println("Įveskite skritulio spindulį:");
+            krastine1 = scanner.nextDouble();
         } else {
-            System.out.println("Tokios figūros ploto skaičiuoti nemoku");
+            System.out.println("Tokios figūros plotas neskaičiuojamas");
         }
     }
 

@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -12,6 +13,8 @@ public class Main {
             figura = new Kvadratas(ioManager.getKrastine1());
         } else if (ioManager.getPasirinktaFigura() == 2) {
             figura = new Trikampis(ioManager.getKrastine1(), ioManager.getKrastine2());
+        } else if (ioManager.getPasirinktaFigura() == 3) {
+            figura = new Skritulys(ioManager.getKrastine1());
         }
 
         if (figura != null) {
@@ -20,5 +23,4 @@ public class Main {
         }
 
     }
-
 }

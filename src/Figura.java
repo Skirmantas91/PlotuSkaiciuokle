@@ -8,6 +8,14 @@ public class Figura {
         this.krastine2 = krastine2;
     }
 
+    public double getKrastine1() {
+        return krastine1;
+    }
+
+    public double getKrastine2() {
+        return krastine2;
+    }
+
     public double getPlotas() {
         return plotas;
     }
